@@ -14,36 +14,41 @@
 
 ## Overview
 
-This project is a Java-based simulator built by **Gauri Nigam** to demonstrate how different CPU scheduling algorithms work in an operating system. The simulator provides a visual and interactive way to understand scheduling strategies like First-Come, First-Served (FCFS), Shortest Job Next (SJN), Round Robin (RR), and others. It is designed to support learners, developers, and educators by simulating process execution and performance metrics.
+This repository contains a Java-based simulator for CPU scheduling algorithms. CPU scheduling is a fundamental aspect of operating systems, where the CPU decides the order in which processes are executed. This simulator allows users to visualize and analyze different scheduling algorithms such as First-Come, First-Served (FCFS), Shortest Job Next (SJN), Round Robin (RR), and more.
+
+This project was developed and maintained by **Gauri Nigam** to aid in the understanding and demonstration of core scheduling concepts in Operating Systems.
 
 ## Problem Statement
 
-In real-world systems, selecting the most suitable CPU scheduling algorithm depends on criteria like turnaround time, waiting time, response time, and throughput. The challenge lies in balancing these depending on the application's needs. This simulator aims to provide a flexible environment where users can input process details (like burst time, priority, arrival time) and observe how different algorithms handle scheduling, enabling better understanding through comparison. The inclusion of a graphical interface makes this tool intuitive and user-friendly.
+Different CPU scheduling algorithms have unique properties, and choosing the right one for a particular situation depends on various performance criteria. In some cases, maximizing response time may be prioritized over throughput, while in others, minimizing average waiting time might be more important. Sometimes, a balance between multiple criteria is required.
+
+The challenge lies in determining which scheduling algorithm is best suited for a given situation. This simulator provides an environment to experimentally test and compare various algorithms through user inputs and live visualizations.
 
 ## Features
 
-- **Supports Multiple Algorithms**: FCFS, SJN, Round Robin, Priority Scheduling, and more.
-- **Intuitive GUI**: Easy-to-use interface for process input and simulation visualization.
-- **Comprehensive Metrics**: Shows performance indicators like waiting time and turnaround time.
-- **Custom Data Structures**: Efficiently handles processes and ready queues for simulation.
+- **Multiple Scheduling Algorithms**: Simulates FCFS, SJN, Round Robin, and other algorithms.
+- **Graphical Interface**: Interactive GUI for easy operation and visualization.
+- **Real-Time Visualization**: Shows queue states, wait times, and burst time progress.
+- **Performance Metrics**: Displays waiting time, turnaround time, and CPU utilization.
+- **Modular Code**: Built using custom data structures to manage processes effectively.
 
 ## Files and Directories
 
-- `sources/`: Contains supporting files and images.
-- `src/main/`: Java source files implementing the simulator logic.
-- `target/`: Build output including compiled classes and JAR files.
-- `pom.xml`: Maven configuration file for dependencies and project build.
+- `sources/`: Additional source files (e.g., images).
+- `src/main/`: Java source code directory.
+- `target/`: Compiled output and build artifacts.
+- `pom.xml`: Maven configuration file.
 
 ## Getting Started
 
 ### Prerequisites
 
-- JDK 8 or higher
-- (Optional) Apache Maven
-- Java IDE like IntelliJ IDEA, Eclipse, or VS Code
+- Java Development Kit (JDK) 8 or higher.
+- Apache Maven (optional, for build management).
+- A Java IDE (e.g., IntelliJ IDEA, Eclipse).
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/gauri-nigam/cpu-scheduling-simulator.git
+   git clone https://github.com/nigamgauri/cpu-scheduling-simulator.git
